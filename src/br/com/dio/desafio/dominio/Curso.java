@@ -39,4 +39,12 @@ public class Curso {
         this.cargaHoraria = cargaHoraria;
     }
 
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", cargaHoraria=" + cargaHoraria +
+                '}';
+    }
 }
