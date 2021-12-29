@@ -29,11 +29,13 @@ public class Main {
 
         Dev dev1 = new Dev();
         dev1.setNome("Dev 1");
+        dev1.InscreverBootcamp(bootcamp);
 
         System.out.println("Conteudos Inscritos" + dev1.getConteudosInscritos());
 
         Dev dev2 = new Dev();
         dev2.setNome("Dev 2");
+        dev2.InscreverBootcamp(bootcamp);
 
 
         System.out.println("Conteudos Inscritos" + dev2.getConteudosInscritos());
