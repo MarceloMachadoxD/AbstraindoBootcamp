@@ -20,6 +20,7 @@ public class Dev {
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
+            this.conteudosInscritos.remove(conteudo.get());
         } else {
             throw new RuntimeException("Não há mais conteúdos para progredir");
         }
